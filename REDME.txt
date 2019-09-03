@@ -1,0 +1,15 @@
+1. install mkvtoolnix
+	$sudo apt-get install mkvtoolnix
+2. For extract subtittle we need know number of track. input.mkv is movie for example.
+	$mkvmerge -i input.mkv
+	output for command above.
+
+	File 'input.mkv': container: Matroska
+	Track ID 1: video (V_MPEG4/ISO/AVC)
+	Track ID 2: audio (A_AAC)
+	Track ID 3: subtitles (S_TEXT/UTF8)
+3. Subtittle is under track ID 3 with mkvextract command can separate subtittle
+	$mkvextract tracks input.mkv 3:subtittle.srt
+	command take 3 input: name of mkv file, number of track ID and name of output file.
+	mkvextract tracks <name mkv movie in current directory> <trackID>:<full output name>
+4. Now we have file with subtittle but is not in state for read in movie.
