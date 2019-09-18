@@ -12,4 +12,6 @@
 	$mkvextract tracks input.mkv 3:subtittle.srt
 	command take 3 input: name of mkv file, number of track ID and name of output file.
 	mkvextract tracks <name mkv movie in current directory> <trackID>:<full output name>
+	For repeate command over all mkv file in directory execute below command:
+	a=1 && for i in *.mkv; do mkvextract tracks “$i” 3:$a.srt && let a=a+1; done
 4. Now we have file with subtittle but is not in state for read in movie.
