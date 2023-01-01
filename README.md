@@ -9,7 +9,7 @@ Where code mean:
 * `install` to tell repository for installation package,
 * `mkvtoolnix` packet which we install. for install more packages seperate them with space.
 
-If install not work, install apt-transport-https first (`sudo apt-get install apt-transport-https first`).
+If install not work, look to website https://mkvtoolnix.download/downloads.html
 ## 2. Information about tracks ##
 For extracting subtitle track from `.mkv` file we need know which track is subtitle. This we do with command:
 
