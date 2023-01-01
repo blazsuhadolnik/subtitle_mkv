@@ -50,3 +50,7 @@ Run script inside folder with subtitles names `1.srt`, `2.srt`, ...
 ```
 python3 podnapisi.py
 ```
+We have now 1.srt, 2.srt, ... and e1.srt, e2.srt, ... to change in original name .srt we run command:
+```
+a=1 && for i in *.mkv; do mv e"$a".srt "${i%.*}".srt && let a=a+1; done
+```
