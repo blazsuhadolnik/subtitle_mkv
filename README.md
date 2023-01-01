@@ -8,6 +8,7 @@ Where code mean:
 * `apt-get` repository from debian distribution (similar to `yum` in arch linux)
 * `install` to tell repository for installation package
 * `mkvtoolnix` packet which we install. for install more packages seperate them with space
+If install not work, install apt-transport-https first (`sudo apt-get install apt-transport-https first`)
 ## 2. Information about tracks ##
 For extracting subtitle track from `.mkv` file we need know which track is subtitle. This we do with command:
 
